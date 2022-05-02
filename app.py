@@ -5,8 +5,8 @@ from tensorflow import keras
 
 app = Flask(__name__)
 
-model=keras.models.load_model("C:/Users/kani2/Desktop/data/saved_model/i.hdf5")
-sannd  = pickle.load(open("C:/Users/kani2/Desktop/data/saved_model/sannd.pkl",'rb'))
+model=keras.models.load_model("i.hdf5")
+sannd  = pickle.load(open("sannd.pkl",'rb'))
 
 @app.route('/')
 def hello_world():
